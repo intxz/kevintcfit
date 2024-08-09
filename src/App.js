@@ -4,10 +4,10 @@ import HelloDesktop from './components/desktop/HelloDesktop'
 import HelloMobile from './components/mobile/HelloMobile'
 
 function App() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1280);
 
     const handleResize = () => {
-        setIsMobile(window.innerWidth <= 1024);
+        setIsMobile(window.innerWidth <= 1280);
     };
 
     useEffect(() =>{
