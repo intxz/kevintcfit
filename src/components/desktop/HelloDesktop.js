@@ -1,10 +1,25 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import logo from "../../images/k (1).svg"
 import mono1 from "../../images/mono.jpg"
 import mono2 from "../../images/mono2.jpg"
+import quebin from "../../images/quebin.jpeg"
+import quebin2 from "../../images/quebin2.jpeg"
 import "./HelloDesktop.css"
 
+const images = [mono1, quebin, mono2, quebin2];
+
 function HelloDesktop() {
+
+    const [currentImageIndex, setCCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() =>{
+            setCCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+        }, 10000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="desktop-container">
             <nav className="nav-desktop">
@@ -22,8 +37,14 @@ function HelloDesktop() {
             </nav>
             <div className="desktop-body">
                 <div className="left-container">
-                    <img className="mono-image1" src={mono1} alt="Kevintcfit" />
-                    <img className="mono-image2" src={mono2} alt="Kevintcfit" />
+                    {images.map((image, index) =>(
+                        <img 
+                            key={index}
+                            src={image}
+                            alt="Image"
+                            className={`mono-image ${index === currentImageIndex ? "visible" : "hidden"}`}
+                        />
+                    ))}
                     <div className="desktop-filter"></div>
                 </div>
                 <div className="right-container">
