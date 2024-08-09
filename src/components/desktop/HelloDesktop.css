@@ -28,7 +28,7 @@
     color: rgb(145, 28, 28);
     letter-spacing: 0.5vw; /* Espaciado de letras relativo al ancho */
     cursor: default;
-    padding-left: 19vw;
+    padding-left: 22vw;
 }
 
 .desktop-menu ul {
@@ -37,7 +37,7 @@
     padding: 0;
     display: flex;
     gap: 3vw; /* Espacio entre elementos de la lista */
-    padding: 0 4vw;
+    padding: 0 3vw;
 }
 
 .desktop-menu li {
