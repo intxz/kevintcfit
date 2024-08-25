@@ -1,0 +1,29 @@
+.plan-desktop-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2vw;
+  padding: 2vh;
+}
+
+.plan-desktop-container > div {
+  flex: 1;
+  margin: 1vh;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  max-width: 30vw;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-desktop-container > div ul li {
+  line-height: 1.6;
+}
+
+.plan-desktop-container > div ul {
+  list-style-type: none;
+  padding: 0.4vw;
+  margin: 0;
+}

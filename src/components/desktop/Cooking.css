@@ -1,0 +1,63 @@
+.logo-desktop-body-cook {
+  max-width: 20rem; /* Tamaño del logo relativo al ancho */
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.9));
+}
+
+.cooking-p {
+  position: absolute;
+  top: calc(50% + 7rem); /* Ajusta esta distancia según sea necesario */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Alinear el texto al centro */
+  font-size: 2rem;
+  color: white;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .cooking-p {
+    font-size: 1.5rem; /* Reducir el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .cooking-p {
+    font-size: 1.2rem; /* Reducir aún más el tamaño del texto para pantallas más pequeñas */
+  }
+}
+
+.footer-cook {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000; /* Color de fondo del pie de página */
+  padding: 2vw 0; /* Espaciado interior del pie de página */
+  text-align: center; /* Alinear texto al centro */
+}
+
+.social-links-cook {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links-cook li {
+  display: inline-block;
+  margin: 0 10rem;
+}
+
+.social-links-cook li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.social-links-cook li a:hover {
+  color: #007bff; /* Color al pasar el mouse */
+}
